@@ -23,6 +23,7 @@ amqp.connect(url, function (error0, connection) {
     });
 
     channel.sendToQueue(QUEUE, Buffer.from(MESSAGE));
+    channel.sendToQueue(QUEUE, Buffer.from(MESSAGE));
     console.log(" [x] Pedido Enviado: %s", MESSAGE);
   });
 
